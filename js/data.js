@@ -1,7 +1,7 @@
 const users = [
   {
     name: 'Marta Sanz Buezo',
-    username: 'marsabu',
+    username: 'marsabue',
     role: '',
     avatar: 'assets/img/avatars/avataaars-sample.svg',
     apps: [1, 2, 3, 4, 5],
@@ -35,15 +35,8 @@ const users = [
     apps: [1, 2, 3, 4, 5],
   },
   {
-    name: 'Belén Sánchez',
-    username: 'besa',
-    role: '',
-    avatar: 'assets/img/avatars/avataaars-sample.svg',
-    apps: [1, 2, 3, 4, 5],
-  },
-  {
     name: 'Belén Santamaría',
-    username: 'santa',
+    username: 'besan',
     role: '',
     avatar: 'assets/img/avatars/avataaars-sample.svg',
     apps: [1, 2, 3, 4, 5],
