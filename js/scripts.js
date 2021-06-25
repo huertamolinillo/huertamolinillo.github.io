@@ -38,46 +38,59 @@ logginForm.addEventListener('submit', function (event) {
   console.log('apps', userApps);
 
   if (userApps.length === 0) {
-    alert(
-      'Actualmente no tienes acceso a ninguna applicación.'
-    );
+    alert('Actualmente no tienes acceso a ninguna applicación.');
     return;
   }
 
   // Remove every child node
-  document.getElementById("apps-container").innerHTML = '';
+  document.getElementById('apps-container').innerHTML = '';
 
   // The user has apps. Display this section (remove class d-none)
-  appsSection.classList.remove("d-none");
+  appsSection.classList.remove('d-none');
   // Loop for every app the user has access
-  userApps.forEach(app => {
+  userApps.forEach((app) => {
     addApp(app.url, app.icon, app.title, app.description);
   });
-
 });
 
 /**
- * 
- * @param {*} user 
+ *
+ * @param {*} user
  */
 function addAvatar(user) {
   console.log('addAvatar...');
-  
+
   // Remove wellcome component
   wellcome.innerHTML = '';
-  
+
   const cloneAvatar = avatar.cloneNode(true);
 
   const imgNode = cloneAvatar.getElementsByTagName('img')[0];
   imgNode.setAttribute('src', user.avatar);
-  
-  const nameNode = cloneAvatar.getElementsByTagName('h1')[0];
-  nameNode.innerHTML = user.name;
 
-  const roleNode = cloneAvatar.getElementsByTagName('p')[0];
-  roleNode.innerHTML = user.role;
+  const nameNode = cloneAvatar.getElementsByTagName('h1')[0];
+  nameNode.innerHTML = 'Hola ' + user.name;
+
+  const quoteNode = cloneAvatar.getElementsByTagName('p')[0];
+  const authorNode = cloneAvatar.getElementsByTagName('p')[1];
+  getQuote().then((quote) => {
+    quoteNode.innerHTML = "\"" + quote.text + "\"";
+    authorNode.innerHTML = (quote.author) ? "-- " + quote.author + " --" : "";
+  });
 
   wellcome.appendChild(cloneAvatar);
+}
+
+/**
+ *
+ * @returns
+ */
+async function getQuote() {
+  const response = await fetch('https://type.fit/api/quotes');
+  const quotes = await response.json();
+  console.log(quotes);
+  const pos = parseInt(Math.random() * quotes.length, 10);
+  return quotes[pos];
 }
 
 /**
@@ -96,19 +109,19 @@ function addApp(link, icon, title, description) {
   // Set Link
   const linkNode = cloneApp.getElementsByTagName('a')[0];
   linkNode.setAttribute('href', link);
-  
+
   // Set Icon
   const iconNode = cloneApp.getElementsByTagName('i')[0];
-  iconNode.classList.remove("bi-window");
+  iconNode.classList.remove('bi-window');
   iconNode.classList.add(icon);
-  
+
   // Set title
   const titleNode = cloneApp.getElementsByTagName('h3')[0];
   titleNode.innerHTML = title;
-  
+
   // Set description
   const descriptionNode = cloneApp.getElementsByTagName('p')[0];
   descriptionNode.innerHTML = description;
 
-  document.getElementById("apps-container").appendChild(cloneApp); 
+  document.getElementById('apps-container').appendChild(cloneApp);
 }
