@@ -73,4 +73,18 @@ const apps = [
     title: 'Vacaciones',
     description: 'Vacaciones',
   },
+  {
+    id: 6,
+    url: 'https://docs.google.com/spreadsheets/d/1ZVwf4mjtgL9W4E3437gJ08tXZ9v8kOQB0056BJz49WE',
+    icon: 'bi-cloud-sun',
+    title: 'Calendario recogida',
+    description: 'Calendario recogida',
+  },
+  {
+    id: 7,
+    url: 'https://docs.google.com/presentation/d/1G0JpsecCU2q00eupyI4F06Zl78EUvuGvvn_CWauxLpo',
+    icon: 'bi-cloud-sun',
+    title: 'Recetas',
+    description: 'Las recetas del Molinillo',
+  },
 ];
