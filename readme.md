@@ -25,3 +25,4 @@ The stack used: HTML, CSS and JS.
 ## Sources
 
 - [Api inspirational quotes](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
+- [Avatar generator](https://getavataaars.com)
