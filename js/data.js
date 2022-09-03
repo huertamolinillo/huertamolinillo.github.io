@@ -35,6 +35,24 @@ const users = [
     avatar: 'assets/img/avatars/belen.svg',
     apps: [1, 2, 3, 4, 5],
   },
+  {
+    name: 'Socio Semanal',
+    username: 'sosem',
+    avatar: 'assets/img/avatars/semanal.svg',
+    apps: [6, 7, 10, 11, 12, 13],
+  },
+  {
+    name: 'Socio Quincenal 1',
+    username: 'quno',
+    avatar: 'assets/img/avatars/quincena-1.svg',
+    apps: [7, 8, 10, 11, 12, 13],
+  },
+  {
+    name: ' Socio Quincenal 2 ',
+    username: 'qdos',
+    avatar: 'assets/img/avatars/quincena-2.svg',
+    apps: [7, 9, 10, 11, 12, 13],
+  },
 ];
 
 const apps = [
@@ -75,16 +93,58 @@ const apps = [
   },
   {
     id: 6,
-    url: 'https://docs.google.com/spreadsheets/d/1ZVwf4mjtgL9W4E3437gJ08tXZ9v8kOQB0056BJz49WE',
-    icon: 'bi-cloud-sun',
-    title: 'Calendario recogida',
-    description: 'Calendario recogida',
+    url: 'https://drive.google.com/file/d/1ir5amnJ3xqipmKWcH9AfvRlgXIz76x3J/view?usp=sharing',
+    icon: 'bi-calendar-date',
+    title: 'Calendario semanal',
+    description: 'Calendario recogida para cestas semanales',
   },
   {
     id: 7,
     url: 'https://docs.google.com/presentation/d/1G0JpsecCU2q00eupyI4F06Zl78EUvuGvvn_CWauxLpo',
-    icon: 'bi-cloud-sun',
+    icon: 'bi-bookmarks',
     title: 'Recetas',
     description: 'Las recetas del Molinillo',
+  },
+  {
+    id: 8,
+    url: 'https://drive.google.com/file/d/1yOzwc39OcqRqZnMJSfDA99IkSgAS4_F7/view?usp=sharing',
+    icon: 'bi-calendar-minus',
+    title: 'Calendario Quincenal 1',
+    description: 'Calendario recogida para cestas quincenales',
+  },
+  {
+    id: 9,
+    url: 'https://drive.google.com/file/d/1kTVSGinBVhm6SL9ddnQIML5BDA0qrzGy/view?usp=sharing',
+    icon: 'bi-calendar-plus',
+    title: 'Calendario Quincenal 2',
+    description: 'Calendario recogida para cestas quincenales',
+  },
+  {
+    id: 10,
+    url: 'https://docs.google.com/forms/d/14tLUebqpcuuL-bDRVhciQu0fr9ToikQgFt-6pUOW_eM/edit?usp=sharing',
+    icon: 'bi-bag-check',
+    title: 'Pedido Pan',
+    description: 'Enviar antes del domingo a las 24h',
+  },
+  {
+    id: 11,
+    url: 'https://docs.google.com/forms/d/12rYogbhmIxs_oYvZTQYVFXYHfsbUFkb9-oElIRQuneI/edit?usp=sharing',
+    icon: 'bi-award',
+    title: 'Pedido Repostería',
+    description: 'Enviar antes del lunes a las 24h',
+  },
+  {
+    id: 12,
+    url: 'https://docs.google.com/forms/d/1TC44hksJ4I2QGBwVrGu-cHdGOEkzw_tbq6EBCghGk4U/edit?usp=sharing',
+    icon: 'bi-asterisk',
+    title: 'Pedido Pollo',
+    description: 'Enviar antes del último jueves de mes a las 24h',
+  },
+  {
+    id: 13,
+    url: 'https://docs.google.com/spreadsheets/d/1yGqipycrYdAqVgNvuRoYrz2QJJ1dgSeusuls3qgDUcw/edit?usp=sharing',
+    icon: 'bi-basket',
+    title: 'Productos',
+    description: 'Productos disponibles esta semana',
   },
 ];
