@@ -68,15 +68,18 @@ function addAvatar(user) {
   imgNode.setAttribute('src', user.avatar);
   
   const nameNode = cloneAvatar.getElementsByTagName('h1')[0];
-  nameNode.innerHTML = 'Hola  <br>' + user.name;
+  let title = 'Hola';
+  !['semanal', 'uno', 'dos'].includes(user.username) && (title = title.concat('<br>', user.name));
+  nameNode.innerHTML = title;
   nameNode.classList.add('text-center')
+  nameNode.classList.add('text-white')
 
   const quoteNode = cloneAvatar.getElementsByTagName('p')[0];
   const authorNode = cloneAvatar.getElementsByTagName('p')[1];
-  getQuote().then((quote) => {
-    quoteNode.innerHTML = "\"" + quote.text + "\"";
-    authorNode.innerHTML = (quote.author) ? "-- " + quote.author + " --" : "";
-  });
+  // getQuote().then((quote) => {
+  //   quoteNode.innerHTML = "\"" + quote.text + "\"";
+  //   authorNode.innerHTML = (quote.author) ? "-- " + quote.author + " --" : "";
+  // });
 
   wellcome.appendChild(cloneAvatar);
 }
