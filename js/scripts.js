@@ -35,7 +35,6 @@ logginForm.addEventListener('submit', function (event) {
   addAvatar(user);
 
   const userApps = _.filter(apps, (app) => _.includes(user.apps, app.id));
-  console.log('apps', userApps);
 
   if (userApps.length === 0) {
     alert('Actualmente no tienes acceso a ninguna applicación.');
@@ -89,7 +88,6 @@ function addAvatar(user) {
 async function getQuote() {
   const response = await fetch('https://type.fit/api/quotes');
   const quotes = await response.json();
-  console.log(quotes);
   const pos = parseInt(Math.random() * quotes.length, 10);
   return quotes[pos];
 }
