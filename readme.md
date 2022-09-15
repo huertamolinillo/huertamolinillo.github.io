@@ -2,7 +2,7 @@
 
 ## What is it
 
-La [Huerta Molinillo](https://huertamolinillo.blogspot.com/) es un proyecto de Soberanía Alimentaria en el centro de Burgos.
+La [Huerta Molinillo](https://huertamolinillo.blogspot.com/) es una iniciativa de Soberanía Alimentaria en el centro de Burgos.
 
 Economía solidaria al servicio de la gente.
 
