@@ -142,7 +142,7 @@ const apps = [
   },
   {
     id: 7,
-    url: 'https://docs.google.com/presentation/d/1G0JpsecCU2q00eupyI4F06Zl78EUvuGvvn_CWauxLpo/edit?usp=sharing',
+    url: 'https://drive.google.com/file/d/1nsZW8izSb1_RaLXIip7saBr9x4pcHed2/view?usp=sharing',
     icon: 'bi-bookmarks',
     title: 'Recetas',
     description: 'Disfruta cocinando nuestros productos',
