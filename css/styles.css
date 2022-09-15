@@ -10891,6 +10891,12 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
+@media (max-width: 540px) {
+  .masthead-avatar {
+    width: 100%;
+  }
+}
+
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
