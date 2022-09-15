@@ -67,9 +67,10 @@ function addAvatar(user) {
 
   const imgNode = cloneAvatar.getElementsByTagName('img')[0];
   imgNode.setAttribute('src', user.avatar);
-
+  
   const nameNode = cloneAvatar.getElementsByTagName('h1')[0];
-  nameNode.innerHTML = 'Hola ' + user.name;
+  nameNode.innerHTML = 'Hola  <br>' + user.name;
+  nameNode.classList.add('text-center')
 
   const quoteNode = cloneAvatar.getElementsByTagName('p')[0];
   const authorNode = cloneAvatar.getElementsByTagName('p')[1];
