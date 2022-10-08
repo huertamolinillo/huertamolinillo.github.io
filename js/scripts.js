@@ -68,7 +68,7 @@ function addAvatar(user) {
   imgNode.setAttribute('src', user.avatar);
   
   const nameNode = cloneAvatar.getElementsByTagName('h1')[0];
-  let title = 'Hola';
+  let title = 'Es la hora de la soberanía alimentaria';
   !['semanal', 'uno', 'dos'].includes(user.username) && (title = title.concat('<br>', user.name));
   nameNode.innerHTML = title;
   nameNode.classList.add('text-center')
@@ -76,6 +76,8 @@ function addAvatar(user) {
 
   const quoteNode = cloneAvatar.getElementsByTagName('p')[0];
   const authorNode = cloneAvatar.getElementsByTagName('p')[1];
+  quoteNode.innerHTML = " \" Mucha gente pequeña, en muchos lugares pequeños, cultivarán pequeños huertos... que alimentarán al mundo \" ";
+  authorNode.innerHTML = "-- Gustavo Duch --"
   // getQuote().then((quote) => {
   //   quoteNode.innerHTML = "\"" + quote.text + "\"";
   //   authorNode.innerHTML = (quote.author) ? "-- " + quote.author + " --" : "";
